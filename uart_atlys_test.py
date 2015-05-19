@@ -11,7 +11,7 @@ values = (head,len(data)) + data
 msg = struct.pack('<{0}B'.format(len(values)), *values)
 print(msg)
 
-
+#test comment
 sp = serial.Serial('COM8')
 sp.baudrate = 57600
 sp.write(msg)
